@@ -1,0 +1,16 @@
+<form (ngSubmit)="saveExpense()">
+
+    <input type="text"
+        name="expense"
+        [(ngModel)]="expense.expense"
+        placeholder="Enter expense name" />
+    <input type="text"
+        name="description"
+        [(ngModel)]="expense.description"
+        placeholder="Enter description" />
+    <input type="text"
+        name="ammount"
+        [(ngModel)]="expense.ammount"
+        placeholder="Enter ammount" />
+    <button type="submit">Add Expense</button>
+</form>
